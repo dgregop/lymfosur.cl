@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lymfosur | Limpieza de fosas sépticas en Ñuble</title>
+<meta name="description" content="Limpieza y destape de fosas sépticas en la Región de Ñuble y alrededores. Atención rápida y responsable. Cotiza por WhatsApp.">
+<meta name="theme-color" content="#082f58">
+<link rel="canonical" href="https://lymfosur.cl/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lymfosur | Limpieza de fosas sépticas en Ñuble">
+<meta property="og:description" content="Atención rápida y responsable en las 21 comunas de Ñuble. Cotiza por WhatsApp.">
+<meta property="og:url" content="https://lymfosur.cl/">
+<meta property="og:image" content="https://lymfosur.cl/assets/og.jpg">
+<meta property="og:locale" content="es_CL">
+
+<link rel="preload" as="image" href="assets/hero-poster.jpg">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="stylesheet" href="styles.css?v=1786456397">
+</head>
+<body>
+
+<a class="skip" href="#servicios">Saltar al contenido</a>
+
+<header class="nav" id="nav">
+  <div class="shell nav__in">
+    <a class="brand" href="#top" aria-label="Lymfosur, inicio">
+      <img class="brand__mark" src="assets/logo.png" alt="" width="46" height="34" decoding="async">
+      <span class="brand__word">Lymfosur</span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#emergencias">Emergencias</a>
+      <a href="#resenas">Reseñas</a>
+      <a href="#cobertura">Cobertura</a>
+    </nav>
+    <a class="btn btn--wa btn--sm" data-wa href="#" rel="noopener">
+      <svg class="ico" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 24a104 104 0 0 0-91.2 154l-8.4 30.8a12 12 0 0 0 14.8 14.8l30.8-8.4A104 104 0 1 0 128 24Zm52.6 142.2c-2.3 6.5-13.4 12.5-18.6 12.9-5 .4-9.6 2.2-32.4-6.7-27.2-10.6-44.4-38.7-45.7-40.5-1.3-1.8-10.9-14.5-10.9-27.6s6.9-19.6 9.3-22.3a9.8 9.8 0 0 1 7.1-3.3c1.8 0 3.6 0 5.1.1s3.7-.6 5.7 4.4 6.9 17.1 7.5 18.3a4.5 4.5 0 0 1 .2 4.3 41.6 41.6 0 0 1-2.5 4.1c-1.2 1.5-2.6 3.3-3.7 4.4s-2.5 2.6-1.1 5.1a75.3 75.3 0 0 0 13.9 17.3 68.3 68.3 0 0 0 20.1 12.4c2.5 1.3 4 1.1 5.5-.7s6.3-7.4 8-9.9 3.4-2.1 5.7-1.3 14.7 6.9 17.2 8.2 4.2 1.9 4.8 2.9.6 5.7-1.7 12.2Z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero__media" aria-hidden="true">
+      <video id="heroVideo" class="hero__video" poster="assets/hero-poster.jpg"
+             autoplay muted loop playsinline preload="none" disablepictureinpicture>
+        <source src="assets/camion.mp4" type="video/mp4">
+      </video>
+      <div class="hero__scrim"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="shell hero__in">
+      <p class="eyebrow">+16 años en Ñuble</p>
+      <h1 class="hero__h1">¿Fosa séptica llena?<br>Te atendemos en Ñuble y alrededores.</h1>
+      <p class="hero__sub">La empresa de limpieza de fosas sépticas en la que Ñuble confía.</p>
+      <div class="hero__cta">
+        <a class="btn btn--wa btn--lg" data-wa href="#" rel="noopener">
+          <svg class="ico" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 24a104 104 0 0 0-91.2 154l-8.4 30.8a12 12 0 0 0 14.8 14.8l30.8-8.4A104 104 0 1 0 128 24Zm52.6 142.2c-2.3 6.5-13.4 12.5-18.6 12.9-5 .4-9.6 2.2-32.4-6.7-27.2-10.6-44.4-38.7-45.7-40.5-1.3-1.8-10.9-14.5-10.9-27.6s6.9-19.6 9.3-22.3a9.8 9.8 0 0 1 7.1-3.3c1.8 0 3.6 0 5.1.1s3.7-.6 5.7 4.4 6.9 17.1 7.5 18.3a4.5 4.5 0 0 1 .2 4.3 41.6 41.6 0 0 1-2.5 4.1c-1.2 1.5-2.6 3.3-3.7 4.4s-2.5 2.6-1.1 5.1a75.3 75.3 0 0 0 13.9 17.3 68.3 68.3 0 0 0 20.1 12.4c2.5 1.3 4 1.1 5.5-.7s6.3-7.4 8-9.9 3.4-2.1 5.7-1.3 14.7 6.9 17.2 8.2 4.2 1.9 4.8 2.9.6 5.7-1.7 12.2Z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" data-tel href="#">Llamar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BARRA DE CONFIANZA ══ -->
+  <section class="trust" aria-label="Datos de la empresa">
+    <div class="shell trust__grid" id="trustGrid"></div>
+  </section>
+
+  <!-- ══ SERVICIOS ══ -->
+  <section class="sect" id="servicios">
+    <div class="shell">
+      <h2 class="h2">Lo que hacemos</h2>
+      <p class="lead">Equipo propio, camión limpiafosas y disposición de residuos donde corresponde.</p>
+
+      <div class="bento" id="serviciosGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══ POR QUÉ ELEGIRNOS ══ -->
+  <section class="sect sect--alt" id="porque">
+    <div class="shell">
+      <h2 class="h2">Lo que nos diferencia</h2>
+      <ol class="reasons" id="reasonsList"></ol>
+    </div>
+  </section>
+
+  <!-- ══ AUTORIZACIONES ══ -->
+  <section class="sect creds" id="autorizaciones">
+    <div class="shell creds__in">
+      <div class="creds__copy">
+        <h2 class="h2">Autorizados y con contrato vigente</h2>
+        <p class="lead">Contamos con autorización de la Seremi de Salud y mantenemos contrato vigente con Essbio y Ecobio para la disposición de los residuos.</p>
+      </div>
+      <ul class="creds__list">
+        <li class="cred">
+          <span class="cred__seal" aria-hidden="true">
+            <svg viewBox="0 0 256 256"><path fill="currentColor" d="M225.86 102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28 23.51 138.44 16 128 16s-18.27 7.51-25.18 14.14c-3.94 3.77-8 7.67-11.57 9.14C88 40.64 82.56 40.72 77.31 40.8c-9.76.15-20.82.31-28.51 8s-7.8 18.75-8 28.51c-.08 5.25-.16 10.67-1.52 13.94-1.47 3.56-5.37 7.63-9.14 11.57C23.51 109.72 16 117.56 16 128s7.51 18.27 14.14 25.18c3.77 3.94 7.67 8 9.14 11.57 1.36 3.27 1.44 8.69 1.52 13.94.15 9.76.31 20.82 8 28.51s18.75 7.85 28.51 8c5.25.08 10.67.16 13.94 1.52 3.56 1.47 7.63 5.37 11.57 9.14C109.72 232.49 117.56 240 128 240s18.27-7.51 25.18-14.14c3.94-3.77 8-7.67 11.57-9.14 3.27-1.36 8.69-1.44 13.94-1.52 9.76-.15 20.82-.31 28.51-8s7.85-18.75 8-28.51c.08-5.25.16-10.67 1.52-13.94 1.47-3.56 5.37-7.63 9.14-11.57C232.49 146.28 240 138.44 240 128s-7.51-18.27-14.14-25.18Zm-52.2 6.84-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 11.32Z"/></svg>
+          </span>
+          <div>
+            <p class="cred__t">Seremi de Salud</p>
+            <p class="cred__d">Autorización sanitaria vigente</p>
+          </div>
+        </li>
+        <li class="cred">
+          <img class="cred__logo" src="assets/essbio.png" alt="Essbio" loading="lazy" decoding="async">
+          <div>
+            <p class="cred__t">Essbio</p>
+            <p class="cred__d">Contrato vigente</p>
+          </div>
+        </li>
+        <li class="cred">
+          <img class="cred__logo" src="assets/ecobio.png" alt="Ecobio" loading="lazy" decoding="async">
+          <div>
+            <p class="cred__t">Ecobio</p>
+            <p class="cred__d">Contrato vigente</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══ CÓMO FUNCIONA ══ -->
+  <section class="sect" id="proceso">
+    <div class="shell">
+      <p class="eyebrow">Tres pasos</p>
+      <h2 class="h2">Del mensaje al camión en tu portón</h2>
+      <div class="steps" id="stepsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══ EMERGENCIAS ══ -->
+  <section class="sect sect--alt emer" id="emergencias">
+    <div class="shell emer__in">
+      <div class="emer__body">
+        <h2 class="h2 emer__h">Emergencias</h2>
+        <p class="lead">Si tienes una emergencia y necesitas nuestros servicios, contáctanos y te atenderemos a la brevedad.</p>
+      </div>
+      <a class="btn btn--wa btn--lg" data-wa-emergencia href="#" rel="noopener">
+        <svg class="ico" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 24a104 104 0 0 0-91.2 154l-8.4 30.8a12 12 0 0 0 14.8 14.8l30.8-8.4A104 104 0 1 0 128 24Zm52.6 142.2c-2.3 6.5-13.4 12.5-18.6 12.9-5 .4-9.6 2.2-32.4-6.7-27.2-10.6-44.4-38.7-45.7-40.5-1.3-1.8-10.9-14.5-10.9-27.6s6.9-19.6 9.3-22.3a9.8 9.8 0 0 1 7.1-3.3c1.8 0 3.6 0 5.1.1s3.7-.6 5.7 4.4 6.9 17.1 7.5 18.3a4.5 4.5 0 0 1 .2 4.3 41.6 41.6 0 0 1-2.5 4.1c-1.2 1.5-2.6 3.3-3.7 4.4s-2.5 2.6-1.1 5.1a75.3 75.3 0 0 0 13.9 17.3 68.3 68.3 0 0 0 20.1 12.4c2.5 1.3 4 1.1 5.5-.7s6.3-7.4 8-9.9 3.4-2.1 5.7-1.3 14.7 6.9 17.2 8.2 4.2 1.9 4.8 2.9.6 5.7-1.7 12.2Z"/></svg>
+        Escribir por emergencia
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ RESEÑAS ══ -->
+  <section class="sect sect--alt" id="resenas">
+    <div class="shell">
+      <div class="rev__head">
+        <h2 class="h2">Reseñas en Google</h2>
+        <a class="btn btn--outline" id="reviewLink" target="_blank" rel="noopener">Dejar una reseña</a>
+      </div>
+      <div class="rev__grid" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══ COBERTURA ══ -->
+  <section class="sect" id="cobertura">
+    <div class="shell cov">
+      <div class="cov__copy">
+        <h2 class="h2">Dónde llegamos</h2>
+        <p class="lead">Las 21 comunas de la Región de Ñuble y alrededores. Si tu sector no aparece en el mapa, escríbenos igual y lo revisamos.</p>
+        <p class="cov__hint">Toca un punto del mapa para ver la comuna.</p>
+      </div>
+      <figure class="cov__map">
+        <div id="mapa" role="application"
+             aria-label="Mapa de cobertura de Lymfosur en la Región de Ñuble"></div>
+        <figcaption class="cov__cap">Cartografía de OpenStreetMap.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ══ GALERÍA ══ -->
+  <section class="gal" id="galeria" aria-labelledby="galTitulo">
+    <div class="shell gal__head">
+      <h2 class="gal__h" id="galTitulo">El camión en terreno</h2>
+      <p class="gal__hint">Desliza para ver más</p>
+    </div>
+    <ul class="gal__tira" id="galeriaTira"></ul>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <section class="final">
+    <div class="shell final__in">
+      <h2 class="final__h">Si tu sistema de alcantarillado está fallando o presenta malos olores, no esperes más.</h2>
+      <p class="final__p">Escríbenos para más información.</p>
+      <a class="btn btn--wa btn--lg" data-wa href="#" rel="noopener">
+        <svg class="ico" viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 24a104 104 0 0 0-91.2 154l-8.4 30.8a12 12 0 0 0 14.8 14.8l30.8-8.4A104 104 0 1 0 128 24Zm52.6 142.2c-2.3 6.5-13.4 12.5-18.6 12.9-5 .4-9.6 2.2-32.4-6.7-27.2-10.6-44.4-38.7-45.7-40.5-1.3-1.8-10.9-14.5-10.9-27.6s6.9-19.6 9.3-22.3a9.8 9.8 0 0 1 7.1-3.3c1.8 0 3.6 0 5.1.1s3.7-.6 5.7 4.4 6.9 17.1 7.5 18.3a4.5 4.5 0 0 1 .2 4.3 41.6 41.6 0 0 1-2.5 4.1c-1.2 1.5-2.6 3.3-3.7 4.4s-2.5 2.6-1.1 5.1a75.3 75.3 0 0 0 13.9 17.3 68.3 68.3 0 0 0 20.1 12.4c2.5 1.3 4 1.1 5.5-.7s6.3-7.4 8-9.9 3.4-2.1 5.7-1.3 14.7 6.9 17.2 8.2 4.2 1.9 4.8 2.9.6 5.7-1.7 12.2Z"/></svg>
+        Cotizar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__in">
+    <div>
+      <p class="foot__brand">Lymfosur</p>
+      <p class="foot__small">Limpieza y destape de fosas sépticas.</p>
+    </div>
+    <div>
+      <p class="foot__t">Contacto</p>
+      <p><a data-wa href="#" rel="noopener">WhatsApp</a></p>
+      <p><a data-tel href="#" id="telText">Teléfono</a></p>
+    </div>
+    <div>
+      <p class="foot__t">Cobertura</p>
+      <p class="foot__small">Región de Ñuble y alrededores.</p>
+    </div>
+  </div>
+  <div class="shell foot__bar">
+    <p>© <span id="year"></span> Lymfosur</p>
+  </div>
+</footer>
+
+<!-- Botón flotante móvil -->
+<a class="fab" data-wa href="#" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 256 256" aria-hidden="true"><path fill="currentColor" d="M128 24a104 104 0 0 0-91.2 154l-8.4 30.8a12 12 0 0 0 14.8 14.8l30.8-8.4A104 104 0 1 0 128 24Zm52.6 142.2c-2.3 6.5-13.4 12.5-18.6 12.9-5 .4-9.6 2.2-32.4-6.7-27.2-10.6-44.4-38.7-45.7-40.5-1.3-1.8-10.9-14.5-10.9-27.6s6.9-19.6 9.3-22.3a9.8 9.8 0 0 1 7.1-3.3c1.8 0 3.6 0 5.1.1s3.7-.6 5.7 4.4 6.9 17.1 7.5 18.3a4.5 4.5 0 0 1 .2 4.3 41.6 41.6 0 0 1-2.5 4.1c-1.2 1.5-2.6 3.3-3.7 4.4s-2.5 2.6-1.1 5.1a75.3 75.3 0 0 0 13.9 17.3 68.3 68.3 0 0 0 20.1 12.4c2.5 1.3 4 1.1 5.5-.7s6.3-7.4 8-9.9 3.4-2.1 5.7-1.3 14.7 6.9 17.2 8.2 4.2 1.9 4.8 2.9.6 5.7-1.7 12.2Z"/></svg>
+</a>
+
+
+<dialog class="visor" id="visor" aria-label="Foto ampliada">
+  <button class="visor__x" type="button" data-cerrar aria-label="Cerrar">&times;</button>
+  <button class="visor__nav visor__nav--prev" type="button" data-paso="-1" aria-label="Anterior">&#8249;</button>
+  <img class="visor__img" id="visorImg" alt="">
+  <button class="visor__nav visor__nav--next" type="button" data-paso="1" aria-label="Siguiente">&#8250;</button>
+</dialog>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="app.js?v=1786456397" defer></script>
+</body>
+</html>
