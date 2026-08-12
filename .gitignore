@@ -1,10 +1,12 @@
-# Originales pesados: en assets/ ya están las versiones optimizadas que usa el sitio
-video.mp4
-foto1.png
-foto2.png
-foto3.png
-logo.png
-ESSBIO.png
-ecobio.avif
+# Originales pesados de la raíz del proyecto.
+# La barra inicial los ancla aquí: sin ella, git excluiría también
+# las versiones optimizadas que viven dentro de assets/.
+/video.mp4
+/foto1.png
+/foto2.png
+/foto3.png
+/logo.png
+/ESSBIO.png
+/ecobio.avif
 
 .DS_Store
