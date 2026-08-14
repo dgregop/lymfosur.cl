@@ -193,13 +193,20 @@ const iniciales = (nombre) =>
   nombre.trim().split(/\s+/).slice(0, 2).map(w => w[0]).join('').toUpperCase();
 
 /* ── Enlaces de contacto ─────────────────────────────────────── */
+/* Marca el clic como conversión en Google Ads antes de abrir WhatsApp.
+   El onclick se arma desde la misma URL que el href, para que el número
+   viva en un solo lugar: el objeto CONTACTO de arriba. */
+function marcarConversion(a, url) {
+  a.setAttribute('onclick', `return gtag_report_conversion('${url}');`);
+}
+
 function enlazarContacto() {
   const wa = `https://wa.me/${CONTACTO.whatsapp}?text=${encodeURIComponent(CONTACTO.mensaje)}`;
-  $$('[data-wa]').forEach(a => { a.href = wa; a.target = '_blank'; });
+  $$('[data-wa]').forEach(a => { a.href = wa; marcarConversion(a, wa); });
 
   // La emergencia abre el chat con su propio mensaje, para que llegue etiquetada.
   const urgente = `https://wa.me/${CONTACTO.whatsapp}?text=${encodeURIComponent(CONTACTO.mensajeEmergencia)}`;
-  $$('[data-wa-emergencia]').forEach(a => { a.href = urgente; a.target = '_blank'; });
+  $$('[data-wa-emergencia]').forEach(a => { a.href = urgente; marcarConversion(a, urgente); });
   $$('[data-tel]').forEach(a => { a.href = `tel:${CONTACTO.telefono.replace(/\s/g, '')}`; });
   const t = $('#telText'); if (t) t.textContent = CONTACTO.telefono;
   const r = $('#reviewLink'); if (r) r.href = CONTACTO.linkResenas;
